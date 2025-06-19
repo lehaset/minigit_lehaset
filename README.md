@@ -179,16 +179,7 @@ int main() {
 
 ---
 
-## **6. Limitations & Improvements**  
-| **Limitation**               | **Possible Improvement**       |  
-|------------------------------|--------------------------------|  
-| Linear `log` traversal       | Add graph history visualization|  
-| No conflict resolution       | Integrate Person B’s merge system|  
-| `std::hash` collisions       | Switch to SHA-1 if needed      |  
-
----
-
-## **7. Conclusion**  
+## **6. Conclusion**  
 This system provides:  
 ✅ Commit storage and retrieval  
 ✅ Branch-aware HEAD management  
@@ -197,7 +188,7 @@ This system provides:
 
 ---
 
-## **Key Takeaways for the Team**  
+## **7.Key Takeaways for the Team**  
 1. **Initialize managers once** (in `main` or CLI setup).  
 2. **Always update HEAD** after creating a commit.  
 3. **Pass blob hashes** from staging area to `Commit`.  
